@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+@font-face {
+  font-family: vazirmatn;
+  src: url('../Assets/Vazirmatn-FD-Medium.ttf');
+}
+
+:root{
+  --br:2vh
+}
+
+.main-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  
+}
+.input-paragraph-count, #textarea ,  .loremIpsumFarsi{
+  font-family: vazirmatn;
+}
+
+.loremIpsumFarsi{
+  width: 72vh;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: var(--br);
+}
+.title{
+  width: 80%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+
+}
+.input-container{
+  width: 80%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.input-container > label{
+  font-size: 2.5vh;
+}
+.input-paragraph-count{
+  width: 20%;
+  height: 80%;
+  outline: none;
+  background-color: #fff;
+  border: none;
+  font-size: 4vh;
+  text-align: center;
+  user-select: none;
+  font-weight: normal;
+  border-radius: var(--br);
+  font-size: 3vh;
+
+
+}
+#textarea{
+  width: 80%;
+  height: 80%;
+  outline: none;
+  border: none;
+  border-radius: 2vh;
+  padding: 4vh;
+  text-align: justify;
+  font-size: 2vh;
+
+}
